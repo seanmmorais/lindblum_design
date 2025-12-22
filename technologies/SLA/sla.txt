@@ -1,0 +1,5 @@
+-sla is stereolithography 3d printing process
+-hardens resin by masking lcd according to layer shape
+-repeats for all layers to for a 3d object
+-shortens print time when printing in bulk, but more difficult to handle compared to FDM machines
+-most material - even the graded tough material, is not tough.

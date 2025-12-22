@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lindblum Design</title>
+  <link rel="icon" href="logo/Propeller_only_recentred.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <header class="hero">
+    <nav class="top-nav">
+      <div class="brand">
+        <img src="logo/Propeller_only.png" alt="Lindblum Design mark">
+        <div>
+          <span class="brand-name">Lindblum Design</span>
+          <span class="brand-tagline">Rapid prototyping & bespoke fabrication</span>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#technologies">Technologies</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="eyebrow">Kuala Lumpur · Product design · 3D printing</p>
+        <h1>Ideas to objects, with speed and intent.</h1>
+        <p class="lede">
+          We prototype, print, and finish one-off parts, branded experiences, and small-run products. From custom hangboards to
+          bakery tools, we iterate fast and deliver parts ready for use.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View recent builds</a>
+          <a class="btn ghost" href="#contact">Start a project</a>
+        </div>
+        <div class="stats">
+          <div><strong>3</strong><span>print methods</span></div>
+          <div><strong>9</strong><span>project families</span></div>
+          <div><strong>Hours not weeks</strong><span>to get to a physical part</span></div>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="hero-frame">
+          <img src="projects/rapid_prototyping/macaron_flipper/macaron_flipper_1.png" alt="Macaron flipper prototype">
+          <div class="hero-frame__caption">
+            Macaron flipper prototype – flips 9 macarons at once to speed up kitchen prep.
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="panel">
+      <div class="section-header">
+        <p class="eyebrow">Who we are</p>
+        <h2>Design lab focused on practical, good-looking parts.</h2>
+        <p>
+          We sit between design and fabrication: refining concepts, engineering them for print, and finishing parts so they feel
+          intentional. Our workflow spans digital sculpting, parametric tools, and hands-on finishing in resin, ABS, and silicone.
+        </p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Brand & products</h3>
+          <p>Logos that work as physical objects and desktop-ready products that ship as STL, resin, or painted pieces.</p>
+        </div>
+        <div class="about-card">
+          <h3>Automation mindset</h3>
+          <p>We build configurators that turn hours of manual modeling into seconds, keeping production consistent.</p>
+        </div>
+        <div class="about-card">
+          <h3>Repair & retrofit</h3>
+          <p>Reverse engineering to keep legacy gear running—replacement brackets, printer jigs, and custom mounts.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="technologies" class="panel panel--accent">
+      <div class="section-header">
+        <p class="eyebrow">Capabilities</p>
+        <h2>Technologies matched to the job.</h2>
+        <p>We pick the right process for the brief—surface quality, strength, or food-safe finishes.</p>
+      </div>
+      <div class="tech-grid">
+        <article class="tech-card">
+          <div class="tech-label">SLA</div>
+          <h3>Resin detail</h3>
+          <p>Glossy, high-resolution prints for logos, collectibles, and clean masters. Great for paint-ready surfaces.</p>
+          <span class="chip">Used on: The Boot Plug logo, figurines</span>
+        </article>
+        <article class="tech-card">
+          <div class="tech-label">FDM</div>
+          <h3>Durable builds</h3>
+          <p>ABS and PLA for strength and quick iterations—fixtures, tools, replacement parts, and larger functional pieces.</p>
+          <span class="chip">Used on: Macaron flipper, hangboards</span>
+        </article>
+        <article class="tech-card">
+          <div class="tech-label">Silicone moulding</div>
+          <h3>Short-run casting</h3>
+          <p>3D printed masters to create moulds for flexible, food-safe, or rubberized parts when prints alone aren't enough.</p>
+          <span class="chip">Used on: Food-safe kitchen tools</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="panel">
+      <div class="section-header">
+        <p class="eyebrow">Selected work</p>
+        <h2>Projects by category.</h2>
+        <p>Directly mapped from the folder structure—every piece is backed by real project files and prints.</p>
+      </div>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="design_automations">Design automations</button>
+        <button class="filter-btn" data-filter="rapid_prototyping">Rapid prototyping</button>
+        <button class="filter-btn" data-filter="figurines">Figurines</button>
+        <button class="filter-btn" data-filter="sports_equipment">Sports equipment</button>
+        <button class="filter-btn" data-filter="flower_pots">Flower pots</button>
+        <button class="filter-btn" data-filter="company_logo">Brand</button>
+      </div>
+      <div class="project-grid" id="project-grid"></div>
+    </section>
+
+    <section class="panel panel--accent" id="spotify">
+      <div class="section-header">
+        <p class="eyebrow">Collaboration highlight</p>
+        <h2>Figurines x music collab</h2>
+        <p>Thai artist Kmonvish Lawan and Malaysian artist Rafiq Ridzwan commissioned a figurine based on their single cover art.</p>
+      </div>
+      <div class="embed-wrap">
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/1AuuBHlqk32vXrI5E3KAp9?utm_source=generator" width="100%" height="200" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <div class="embed-note">Listen while viewing the SLA-painted sculpt.</div>
+      </div>
+    </section>
+
+    <section id="contact" class="panel contact">
+      <div class="contact-card">
+        <h2>Have a part in mind?</h2>
+        <p>Share a sketch, reference photo, or CAD file. We'll recommend a process and get a prototype on your desk fast.</p>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:admin@lindblumdesign.com">admin@lindblumdesign.com</a>
+          <a class="btn ghost" href="https://www.instagram.com/tbp.kl/?hl=en" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <img src="logo/Propeller_only.png" alt="" aria-hidden="true">
+      <div>
+        <strong>Lindblum Design</strong>
+        <span>From 3D concept to finished part.</span>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="#projects">Projects</a>
+      <a href="#technologies">Technologies</a>
+      <a href="mailto:hello@lindblum.design">Contact</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

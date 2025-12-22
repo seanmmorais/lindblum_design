@@ -1,0 +1,8 @@
+-layer models approached us to design some automations for their products
+-https://layermodels.com/3d-customizers/
+-3D printed pen holder for desktop use
+-can easily configure width, height, font, and more to almost instantly generate a mesh
+-the mesh can then be downloaded and printed
+-self-supported designs so you don't waste material on supports on fdm or sla printers
+-this would take roughly 1-2 hours to design in a manual way, but using DA, we can shorten that to 10-20 seconds
+-hatch can be pried open with just the right amount of resistance

@@ -1,0 +1,5 @@
+-standing desk prototype using recycled 2x4" wood from pallets
+-control settings via raspberry pi lcd touchscreen
+-managed to build this prototype within a week
+-3d printed ABS brackets hold the motors in place
+-sturdy and dependable prototype, just needs to go through detailed product development
