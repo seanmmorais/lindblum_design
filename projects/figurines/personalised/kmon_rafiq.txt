@@ -1,0 +1,6 @@
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/1AuuBHlqk32vXrI5E3KAp9?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+-Thai artist Kmonvish Lawan & Malaysian artist Rafiq Ridzwan
+-request for a 3d model of one of their single cover artist
+-painting left undone - they requested to paint it themselves!
+-printed with SLA

@@ -1,0 +1,6 @@
+-old 3d printer colido
+-parts no longer available
+-was making terrible colliding sound
+-approached to fix the printer
+-reprinted a jig that had started to warp and thus collide with the frame
+-no more sound
