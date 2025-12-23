@@ -28,7 +28,6 @@ jobs:
         run: |
           aws s3 sync "$DIST_DIR" "s3://${{ secrets.S3_BUCKET }}/" \
             --delete \
-            --acl public-read \
             --exclude ".git/*" \
             --exclude ".github/*" \
             --exclude ".gitignore"
