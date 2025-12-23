@@ -190,13 +190,17 @@ h1 {
 .hero-frame {
   background: linear-gradient(135deg, rgba(122, 224, 255, 0.16), rgba(243, 79, 90, 0.12));
   border-radius: var(--radius);
-  padding: 10px;
+  padding: 8px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+  justify-content: center;
+  width: max-content;
+  margin: 0 auto;
 }
 
 .hero-frame img {
   width: 100%;
+  max-height: 600px;
   border-radius: 12px;
   display: block;
   object-fit: cover;
