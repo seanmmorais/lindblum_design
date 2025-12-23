@@ -174,11 +174,56 @@ const projects = [
     tags: ["Boxing", "Impact friendly", "Coaching tools"],
   },
   {
+    category: "sports_equipment",
+    title: "Underwater hockey sticks",
+    description:
+      "Hydrodynamic, textured underwater hockey sticks made affordable without moulds; produced ~120 pieces via printed joins sized to our machines.",
+    image: "projects/sports_equipment/uwh/sticks/uwh_sticks_1.png",
+    images: [
+      "projects/sports_equipment/uwh/sticks/uwh_sticks_1.png",
+      "projects/sports_equipment/uwh/sticks/uwh_sticks_2.png",
+      "projects/sports_equipment/uwh/sticks/uwh_sticks_3.png",
+      "projects/sports_equipment/uwh/sticks/uwh_sticks_4.jpg",
+      "projects/sports_equipment/uwh/sticks/uwh_sticks_5.jpg",
+      "projects/sports_equipment/uwh/sticks/uwh_sticks_6.png",
+    ],
+    textPath: "projects/sports_equipment/uwh/sticks/sticks.txt",
+    tags: ["Underwater hockey", "Production run", "Hydrodynamic"],
+  },
+  {
+    category: "sports_equipment",
+    title: "Underwater hockey goal post",
+    description:
+      "Cost-reduced UWH goal post option to replace expensive sheet metal versions; designed with Sub Aquatic Group to halve pricing.",
+    image: "projects/sports_equipment/uwh/goal_post/goal_post_1.jpg",
+    images: ["projects/sports_equipment/uwh/goal_post/goal_post_1.jpg"],
+    textPath: "projects/sports_equipment/uwh/goal_post/goal_post.txt",
+    tags: ["Underwater hockey", "Cost-down", "Fabrication"],
+  },
+  {
+    category: "sports_equipment",
+    title: "Underwater hockey mouth guard",
+    description:
+      "Mouth guard concepts exploring material combos and gyroid lattices for impact absorption, in collaboration with Sub Aquatic Group.",
+    image: "projects/sports_equipment/uwh/mouth_guard/mouth_guard_1.jpg",
+    images: ["projects/sports_equipment/uwh/mouth_guard/mouth_guard_1.jpg"],
+    textPath: "projects/sports_equipment/uwh/mouth_guard/mouth_guard.txt",
+    tags: ["Underwater hockey", "Safety", "Materials"],
+  },
+  {
     category: "design_automations",
     title: "Custom keycaps",
     description: "Character-driven keycaps including Poké Ball, Charizard, and Dim Sum sets.",
-    image: "projects/keycaps/charizard_1.png",
-    images: ["projects/keycaps/charizard_1.png", "projects/keycaps/dim_sum_1.png", "projects/keycaps/pokeball_1.png"],
+    image: "projects/keycaps/keycap_1.jpg",
+    images: [
+      "projects/keycaps/keycap_1.jpg",
+      "projects/keycaps/keycap_2.jpg",
+      "projects/keycaps/keycap_3.jpg",
+      "projects/keycaps/keycap_4.jpg",
+      "projects/keycaps/keycap_5.jpg",
+      "projects/keycaps/keycap_6.png",
+      "projects/keycaps/keycap_7.png"
+    ],
     tags: ["FDM", "Collectible", "Keyboard"],
   },
 ];
@@ -186,6 +231,10 @@ const projects = [
 const projectGrid = document.getElementById("project-grid");
 const filterButtons = document.querySelectorAll(".filter-btn");
 const textLinkCache = new Map();
+
+window.addEventListener("load", () => {
+  document.body.classList.add("page-loaded");
+});
 
 const uniqueLinks = (links) => [...new Set(links)];
 

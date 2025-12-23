@@ -190,7 +190,7 @@ h1 {
 .hero-frame {
   background: linear-gradient(135deg, rgba(122, 224, 255, 0.16), rgba(243, 79, 90, 0.12));
   border-radius: var(--radius);
-  padding: 12px;
+  padding: 10px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
 }
@@ -354,7 +354,9 @@ h2 {
   width: 100%;
   aspect-ratio: 4 / 3;
   height: auto;
-  object-fit: cover;
+  min-height: 200px;
+  object-fit: contain; /* show ~100% of each image */
+  background: radial-gradient(circle at 30% 20%, rgba(122, 224, 255, 0.05), transparent 50%), #0a0e18;
   display: block;
 }
 
@@ -408,6 +410,98 @@ h2 {
 .project-links a {
   color: var(--accent-2);
   text-decoration: underline;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  filter: blur(6px);
+}
+
+body.page-loaded .reveal {
+  animation: fade-up var(--reveal-duration, 1.4s) ease forwards;
+  animation-delay: var(--reveal-delay, 0s);
+}
+
+@keyframes fade-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.page-loaded .brand img {
+  animation: logo-glow 2s ease-in-out forwards;
+}
+
+@keyframes logo-glow {
+  0% {
+    transform: scale(0.92) rotate(-2deg);
+    filter: drop-shadow(0 0 0 rgba(122, 224, 255, 0));
+  }
+  50% {
+    transform: scale(1.02) rotate(2deg);
+    filter: drop-shadow(0 0 18px rgba(122, 224, 255, 0.3));
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    filter: drop-shadow(0 0 0 rgba(122, 224, 255, 0));
+  }
+}
+
+.coming-soon {
+  background: radial-gradient(circle at 20% 10%, rgba(248, 192, 105, 0.08), transparent 55%),
+    radial-gradient(circle at 80% 0%, rgba(122, 224, 255, 0.08), transparent 55%),
+    #0c1220;
+}
+
+.coming-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.coming-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.coming-card h3 {
+  margin: 0;
+}
+
+.coming-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.coming-status {
+  align-self: flex-start;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.coming-status--accent {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.coming-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .embed-wrap {

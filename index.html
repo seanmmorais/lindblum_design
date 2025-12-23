@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="bg-grid"></div>
-  <header class="hero">
+  <header class="hero reveal" style="--reveal-delay: 0s">
     <nav class="top-nav">
       <div class="brand">
         <img src="logo/Propeller_only.png" alt="Lindblum Design mark">
@@ -28,7 +28,7 @@
 
     <div class="hero-content">
       <div class="hero-text">
-        <p class="eyebrow">Kuala Lumpur · Product design · 3D printing</p>
+        <p class="eyebrow">Small scale manufacturing · Product design · 3D printing</p>
         <h1>Ideas to objects, with speed and intent.</h1>
         <p class="lede">
           We prototype, print, and finish one-off parts, branded experiences, and small-run products. From custom hangboards to
@@ -46,7 +46,7 @@
       </div>
       <div class="hero-media">
         <div class="hero-frame">
-          <img src="projects/rapid_prototyping/macaron_flipper/macaron_flipper_1.png" alt="Macaron flipper prototype">
+          <img src="projects/rapid_prototyping/macaron_flipper/macaron_flipper_2.png" alt="Macaron flipper prototype">
           <div class="hero-frame__caption">
             Macaron flipper prototype – flips 9 macarons at once to speed up kitchen prep.
           </div>
@@ -56,7 +56,7 @@
   </header>
 
   <main>
-    <section id="about" class="panel">
+    <section id="about" class="panel reveal" style="--reveal-delay: 0.1s">
       <div class="section-header">
         <p class="eyebrow">Who we are</p>
         <h2>Design lab focused on practical, good-looking parts.</h2>
@@ -81,7 +81,7 @@
       </div>
     </section>
 
-    <section id="technologies" class="panel panel--accent">
+    <section id="technologies" class="panel panel--accent reveal" style="--reveal-delay: 0.15s">
       <div class="section-header">
         <p class="eyebrow">Capabilities</p>
         <h2>Technologies matched to the job.</h2>
@@ -109,7 +109,7 @@
       </div>
     </section>
 
-    <section id="projects" class="panel">
+    <section id="projects" class="panel reveal" style="--reveal-delay: 0.2s">
       <div class="section-header">
         <p class="eyebrow">Selected work</p>
         <h2>Projects by category.</h2>
@@ -127,7 +127,44 @@
       <div class="project-grid" id="project-grid"></div>
     </section>
 
-    <section class="panel panel--accent" id="spotify">
+    <section class="panel coming-soon reveal" style="--reveal-delay: 0.25s">
+      <div class="section-header">
+        <p class="eyebrow">Coming soon</p>
+        <h2>In progress & queued builds.</h2>
+        <p>Projects currently in CAD, print testing, or finishing. Check back for full galleries.</p>
+      </div>
+      <div class="coming-grid">
+        <article class="coming-card">
+          <div class="coming-status">Prototype</div>
+          <h3>Automated trophy generator</h3>
+          <p>Layer Models brief to configure trophies with interchangeable toppers and custom text in seconds.</p>
+          <div class="coming-meta">
+            <span class="chip">Design automation</span>
+            <span class="chip">Parametric</span>
+          </div>
+        </article>
+        <article class="coming-card">
+          <div class="coming-status coming-status--accent">Print run</div>
+          <h3>3D printed shelving</h3>
+          <p>Modular, wall-mounted shelving system using printed brackets and tensioned cables for quick installs.</p>
+          <div class="coming-meta">
+            <span class="chip">FDM</span>
+            <span class="chip">Modular</span>
+          </div>
+        </article>
+        <article class="coming-card">
+          <div class="coming-status">Field testing</div>
+          <h3>Underwater hockey kit</h3>
+          <p>Expanded UWH set: sticks + puck molds, iterating on durability and grip underwater.</p>
+          <div class="coming-meta">
+            <span class="chip">Production</span>
+            <span class="chip">Sports equipment</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel panel--accent reveal" id="spotify" style="--reveal-delay: 0.3s">
       <div class="section-header">
         <p class="eyebrow">Collaboration highlight</p>
         <h2>Figurines x music collab</h2>
@@ -139,7 +176,7 @@
       </div>
     </section>
 
-    <section id="contact" class="panel contact">
+    <section id="contact" class="panel contact reveal" style="--reveal-delay: 0.35s">
       <div class="contact-card">
         <h2>Have a part in mind?</h2>
         <p>Share a sketch, reference photo, or CAD file. We'll recommend a process and get a prototype on your desk fast.</p>
