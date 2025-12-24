@@ -230,6 +230,8 @@ const projects = [
 
 const projectGrid = document.getElementById("project-grid");
 const filterButtons = document.querySelectorAll(".filter-btn");
+const navToggle = document.querySelector(".nav-toggle");
+const navLinks = document.querySelector(".nav-links");
 const textLinkCache = new Map();
 
 window.addEventListener("load", () => {
@@ -316,6 +318,20 @@ filterButtons.forEach((btn) => {
 });
 
 renderProjects();
+
+if (navToggle && navLinks) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", isOpen);
+  });
+
+  navLinks.addEventListener("click", (event) => {
+    if (event.target.tagName.toLowerCase() === "a") {
+      navLinks.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+    }
+  });
+}
 
 // Lightbox carousel for project images
 const lightbox = document.createElement("div");
