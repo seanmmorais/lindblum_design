@@ -114,8 +114,8 @@ a {
   display: none;
   flex-direction: column;
   gap: 4px;
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -738,16 +738,31 @@ body.page-loaded .reveal {
 
 @media (max-width: 720px) {
   .top-nav {
-    position: static;
+    position: sticky;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 10px 12px;
   }
   .nav-toggle {
     display: inline-flex;
+    align-self: center;
   }
   .nav-links {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
     flex-direction: column;
     width: 100%;
     display: none;
-    padding: 8px 0 0;
+    padding: 8px 0;
+    background: rgba(10, 14, 24, 0.95);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    z-index: 5;
   }
   .nav-links.open {
     display: flex;
@@ -755,6 +770,7 @@ body.page-loaded .reveal {
   .nav-links a {
     width: 100%;
     text-align: center;
+    padding: 12px;
   }
   .project-card {
     min-height: auto;
@@ -776,10 +792,17 @@ body.page-loaded .reveal {
   .stats {
     justify-content: center;
   }
+  .stats div:last-child {
+    grid-column: span 2;
+    text-align: center;
+  }
   .hero-frame {
     width: 100%;
+    padding: 10px;
   }
   .hero-frame img {
     width: 100%;
+    max-height: 320px;
+    clip-path: none;
   }
 }
